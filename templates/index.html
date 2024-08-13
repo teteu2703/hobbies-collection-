@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Hobbies Collection</h1>
+    <h2>Lista de Livros</h2>
+
+    <ul>
+        {% for livro in livros %}
+            <li>{{ livro['título'] }} por {{ livro['autor'] }}</li>
+        {% endfor %}
+    </ul>
+
+    {% endblock %}
